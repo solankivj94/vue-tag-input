@@ -5,8 +5,8 @@ ___
 
 
 **Todo**
-  - [x]  Default Layout with renderless component
-  - [x] Make NPM Package
+  - [ ]  Default Layout with renderless component
+  - [ ] Make NPM Package
 
 
 ## Project setup
