@@ -1,14 +1,28 @@
 <template>
   <div id="app" class="min-h-screen bg-gray-700 p-8">
-    <div class="max-w-md mx-auto card mt-8">
+    <div class="max-w-xl mx-auto card mt-8">
       <label class="form-label mb-2">Tag Input</label>
-      <TagInput>
-        <div class="tag-input" slot-scope="{}">
-          <span class="tag-input-tag">
-            <span>sample tag</span>
-            <button type="button" class="tag-input-remove">&times;</button>
+      <TagInput v-model="tags">
+        <div
+          class="tag-input"
+          slot-scope="{ tags, removeTag, inputProps, inputEvents }"
+        >
+          <span v-for="tag in tags" :key="tag" class="tag-input-tag">
+            <span>{{ tag }}</span>
+            <button
+              type="button"
+              class="tag-input-remove"
+              @click="removeTag(tag)"
+            >
+              &times;
+            </button>
           </span>
-          <input class="tag-input-text" placeholder="Add tag..." />
+          <input
+            class="tag-input-text"
+            placeholder="Add tag..."
+            v-bind="inputProps"
+            v-on="inputEvents"
+          />
         </div>
       </TagInput>
     </div>
@@ -19,9 +33,13 @@
 import TagInput from "./components/TagInput.vue";
 
 export default {
-  name: "app",
   components: {
     TagInput
+  },
+  data() {
+    return {
+      tags: ["awesome", "excellent", "amazing"]
+    };
   }
 };
 </script>
