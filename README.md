@@ -1,4 +1,13 @@
-# vue-tag-input
+## Vue Tag Input
+___
+
+**Demo**:link: - https://vue-tag-input.netlify.com
+
+
+**Todo**
+  - [x]  Default Layout with renderless component
+  - [x] Make NPM Package
+
 
 ## Project setup
 ```
@@ -19,6 +28,3 @@ yarn build
 ```
 yarn lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

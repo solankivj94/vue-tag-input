@@ -1,0 +1,102 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #4a5568;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  padding: 2rem;
+  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+    0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+    0 5px 15px 0 rgba(0, 0, 0, 0.08);
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  color: #22292f;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+.form-input:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 3px rgba(52, 144, 220, 0.5);
+  box-shadow: 0 0 0 3px rgba(52, 144, 220, 0.5);
+}
+.form-label {
+  display: block;
+  color: #606f7b;
+  font-weight: 600;
+}
+
+.tag-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0 0.25rem 0.5rem;
+}
+.tag-input-tag {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  line-height: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 0.875rem;
+  background-color: #bcdefa;
+  color: #1c3d5a;
+  border-radius: 0.25rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0.25rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+.tag-input-tag:focus-within {
+  -webkit-box-shadow: 0 0 0 2px rgba(52, 144, 220, 0.5);
+  box-shadow: 0 0 0 2px rgba(52, 144, 220, 0.5);
+}
+.tag-input-remove {
+  color: #2779bd;
+  font-size: 1.125rem;
+  line-height: 1;
+}
+.tag-input-remove:first-child {
+  margin-right: 0.25rem;
+}
+.tag-input-remove:last-child {
+  margin-left: 0.25rem;
+}
+.tag-input-remove:focus {
+  outline: 0;
+}
+.tag-input-text {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: 0;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.25rem;
+  padding-right: 0.5rem;
+  min-width: 8rem;
+}
