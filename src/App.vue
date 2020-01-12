@@ -1,5 +1,6 @@
 <template>
   <div id="app" class="min-h-screen bg-gray-700 p-8">
+    <h2 class="text-center text-4xl font-bold text-green-700">Vue Tag Input</h2>
     <div class="max-w-xl mx-auto card mt-8">
       <label class="form-label mb-2">Tag Input</label>
       <TagInput v-model="tags">
@@ -26,6 +27,7 @@
         </div>
       </TagInput>
     </div>
+    <p class="text-white text-center mt-20">Examples will be added soon..</p>
   </div>
 </template>
 
@@ -38,7 +40,7 @@ export default {
   },
   data() {
     return {
-      tags: ["awesome", "excellent", "amazing"]
+      tags: ["vue", "react", "svelte"]
     };
   }
 };
