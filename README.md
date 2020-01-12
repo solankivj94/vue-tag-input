@@ -6,8 +6,10 @@ ___
 
 **Todo**
   - [ ]  Default Layout with Renderless component
-  - [ ]  Add Examples
-  - [ ]  Make NPM Package
+  - [ ]  Add Examples and Documentation
+  - [ ]  Make it NPM Package
+  - [ ]  Autocompletion
+  - [ ]  Custom Hooks for Before Adding, Before Removing
 
 
 ## Project setup
